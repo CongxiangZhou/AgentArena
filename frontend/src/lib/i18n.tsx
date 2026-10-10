@@ -443,7 +443,7 @@ const translations = {
 };
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Language>("zh");
+  const [lang, setLangState] = useState<Language>("en");
 
   // 从 localStorage 读取语言偏好
   useEffect(() => {

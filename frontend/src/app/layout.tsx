@@ -16,15 +16,16 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Agent Arena — 赛事奖金托管",
-  description: "赛事奖金提前托管，比赛结果独立审核，领奖与退款全程可查。",
+  title: "Agent Arena — Tournament Prize Escrow",
+  description:
+    "Tournament prizes held in escrow, independently reviewed results, and traceable prize claims and refunds.",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="zh-CN">
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
