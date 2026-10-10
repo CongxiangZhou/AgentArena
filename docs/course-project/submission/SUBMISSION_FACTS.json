@@ -1,0 +1,179 @@
+{
+  "updated_at": "2026-10-10",
+  "project_title": "Agent Arena Tournament Prize Escrow",
+  "course_title": "Enterprise Financial Decentralized Application",
+  "authors": [],
+  "author_status": "Awaiting the student's confirmed names and contribution attribution",
+  "repository_url": "https://github.com/aokamutidao/agent-arena-escrow",
+  "deployment": {
+    "status": "verified",
+    "frontend_url": "https://agent-arena-course-web.onrender.com",
+    "api_url": "https://agent-arena-course-api.onrender.com",
+    "chain": "Sepolia (11155111)",
+    "manager": "0x4eafee134156c65ae64887b5e7b861977c4cfa98",
+    "deployment_block": 11885235,
+    "ci_url": "https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954",
+    "token": "0x36600325144a43e00a7664e7e7c0d4dda54955f4",
+    "ci_summary": "The main release commit 9e8e429 passed all four GitHub Actions jobs: frontend, backend, contracts and integration.",
+    "cloud_model_mode": "deterministic_simulation",
+    "acceptance_scope": "Public page, HTTPS, API and chain configuration smoke checks only; the full financial and real LLM demonstration is local.",
+    "runtime_commit": "9e8e42981529ab0fd59f6ff3504f05cab7eb1389",
+    "verified_at": "2026-10-10T15:05:44.733883+00:00",
+    "summary": "Both Render services are live. Six HTTP smoke checks passed; browser checks confirmed the dashboard, language switch, chain sync and installed MetaMask entry. Public execution uses deterministic simulation; the recorded local match uses real model calls.",
+    "evidence_sources": [
+      "docs/course-project/evidence/cloud-smoke-2026-10-10.json",
+      "docs/course-project/evidence/github-ci-2026-10-10.json",
+      "docs/course-project/evidence/sepolia-deployment-2026-10-10.json"
+    ]
+  },
+  "local": {
+    "frontend": "http://localhost:3002",
+    "api": "http://localhost:18081",
+    "rpc": "http://127.0.0.1:18545",
+    "chain_id": 31337,
+    "manager": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512"
+  },
+  "recorded_tournament": {
+    "id": 13,
+    "title": "agent fight test 4",
+    "mode": "llm",
+    "model": "qwen3.5-plus",
+    "rounds": 15,
+    "successful_calls": 30,
+    "failed_calls": 0,
+    "winner": "blue",
+    "winner_hp": 10,
+    "prize_dusd": 100,
+    "winner_balance_before_dusd": 300,
+    "winner_balance_after_dusd": 400,
+    "tournament_outstanding_after_dusd": 0,
+    "input_tokens": 30543,
+    "output_tokens": 513,
+    "total_tokens": 31056,
+    "cumulative_call_latency_ms": 66964,
+    "evidence_hash": "0x00bc8fa3e7148c3dfbc98c0bb823c8a7448a37a1118f43ba741aa4a655fb1b22",
+    "evidence_sources": [
+      "docs/course-project/evidence/recorded-tournament-13.json",
+      "docs/course-project/demo-user-recording/NARRATION.en-zh.json",
+      "docs/course-project/demo-user-recording/VALIDATION.json"
+    ]
+  },
+  "independent_wallet_acceptance": {
+    "tournament_id": 7,
+    "successful_receipts": 9,
+    "total_gas_used": 1195013,
+    "rounds": 19,
+    "successful_calls": 38,
+    "source": "docs/course-project/evidence/metamask-main-flow-2026-10-10.json"
+  },
+  "tests": {
+    "foundry_passed": 49,
+    "frontend_passed": 42,
+    "fuzz_runs_per_test": 256,
+    "invariant_runs": 64,
+    "invariant_depth": 64,
+    "manager_line_coverage_pct": 98.59,
+    "manager_branch_coverage_pct": 92.5,
+    "whole_repository_contract_line_coverage_pct": 80.54,
+    "gas_prize_scale": [
+      74024,
+      74024,
+      74024
+    ],
+    "gas_refund_scale": [
+      71635,
+      71635,
+      71635
+    ],
+    "sponsor_counts": [
+      1,
+      16,
+      64
+    ],
+    "source": "docs/course-project/TEST_REPORT.md",
+    "foundry_course_passed": 41,
+    "foundry_legacy_regressions_passed": 8,
+    "gas_snapshot_sources": [
+      "contracts/snapshots/PrizeScale.json",
+      "contracts/snapshots/RefundScale.json"
+    ]
+  },
+  "scope": {
+    "database": "SQLite",
+    "backend": "Go Gin",
+    "frontend": "Next.js 14 TypeScript wagmi RainbowKit",
+    "contracts": "Solidity 0.8.24",
+    "business_transaction_types": 13,
+    "course_contracts": 4,
+    "token": "DUSD demonstration ERC20 with 6 decimals",
+    "real_assets": false,
+    "rag_implemented": false,
+    "user_survey_conducted": false,
+    "video_duration_seconds": 600,
+    "live_defense_required": false
+  },
+  "external_references": [
+    {
+      "id": "1",
+      "title": "How do I claim a cash prize such as a League or Cash Cup prize",
+      "author": "FACEIT Support",
+      "date": "2024-06-26",
+      "accessed": "2026-10-10",
+      "url": "https://support.faceit.com/hc/en-us/articles/9718204637596-How-do-I-claim-a-cash-prize-such-as-a-League-or-Cash-Cup-prize"
+    },
+    {
+      "id": "2",
+      "title": "Blockchain Technology Overview NISTIR 8202",
+      "author": "D. Yaga, P. Mell, N. Roby and K. Scarfone",
+      "date": "2018-10",
+      "accessed": "2026-10-10",
+      "url": "https://doi.org/10.6028/NIST.IR.8202"
+    },
+    {
+      "id": "3",
+      "title": "Security Considerations Solidity 0.8.24",
+      "author": "Solidity documentation",
+      "accessed": "2026-10-10",
+      "url": "https://docs.soliditylang.org/en/v0.8.24/security-considerations.html"
+    },
+    {
+      "id": "4",
+      "title": "ERC20 SafeERC20 API",
+      "author": "OpenZeppelin Contracts 5.x",
+      "accessed": "2026-10-10",
+      "url": "https://docs.openzeppelin.com/contracts/5.x/api/token/erc20#SafeERC20"
+    },
+    {
+      "id": "5",
+      "title": "ReentrancyGuard API",
+      "author": "OpenZeppelin Contracts 5.x",
+      "accessed": "2026-10-10",
+      "url": "https://docs.openzeppelin.com/contracts/5.x/api/utils#ReentrancyGuard"
+    },
+    {
+      "id": "6",
+      "title": "Appropriate Uses For SQLite",
+      "author": "SQLite",
+      "accessed": "2026-10-10",
+      "url": "https://www.sqlite.org/whentouse.html"
+    },
+    {
+      "id": "7",
+      "title": "Deploy for Free",
+      "author": "Render",
+      "accessed": "2026-10-10",
+      "url": "https://render.com/docs/free"
+    },
+    {
+      "id": "8",
+      "title": "Understanding GitHub Actions",
+      "author": "GitHub Docs",
+      "accessed": "2026-10-10",
+      "url": "https://docs.github.com/en/actions/get-started/understand-github-actions"
+    }
+  ],
+  "course_code": "SC 6113",
+  "submission_deadline": "before 2026-10-12",
+  "repository_branch": "main",
+  "repository_publication": "Independent course submission snapshot; earlier development history remains in the original working repository."
+}

@@ -15,7 +15,7 @@
 | Manager deployment block | 11885235 |
 | DUSD | `0x36600325144a43e00A7664E7e7C0d4dDa54955f4` |
 
-[部署回执及五合约只读验证](evidence/sepolia-deployment-2026-10-10.json)已保存。API 的 /health、/ready 和 /api/config 已实测返回 200，ready=true，Sepolia 与五合约配置正确；前端构建与公网页面检查仍在收尾。未执行云端铸币、赛事、赞助、领奖或退款。云端使用标注的确定性模拟，真实模型完整演示在本地完成。
+[部署回执及五合约只读验证](evidence/sepolia-deployment-2026-10-10.json)已保存。前后端 Render 服务均已 Live，实际运行版本为 main `9e8e429`。[公网 smoke 记录](evidence/cloud-smoke-2026-10-10.json)确认 HTTPS 首页及 API /health、/ready、/api/config 返回 200，ready=true，Sepolia 与五合约配置正确。Chrome 首页、中文/英文切换、Sepolia Synced 数据与 Installed MetaMask 连接入口均通过；本次没有钱包签名或业务交易。未执行云端铸币、赛事、赞助、领奖或退款。云端使用标注的确定性模拟，真实模型完整演示在本地完成。
 
 Render 两个服务均使用本仓库 `main`，Docker 上下文为根目录。前端构建参数 `NEXT_PUBLIC_API_URL` 指向上表 API，`NEXT_PUBLIC_SEPOLIA_RPC_URL` 为可访问的 Sepolia RPC。API 的 `AUTH_DOMAIN=agent-arena-course-web.onrender.com`、`CORS_ORIGINS=https://agent-arena-course-web.onrender.com`，链配置按上表填写。JWT secret 只通过服务端私密环境变量配置，不上传部署钱包私钥。
 
@@ -160,7 +160,7 @@ docker compose --env-file .env.course up -d --build
 
 验收时检查：公开 HTTPS URL、`/health`、`/ready`、钱包登录消息中的正确域名、账户/网络切换、所有角色流程、容器重启后数据保持、拒签/断网提示、手机宽度及 RPC 确认延迟。保存实际截图和检查时间，而不只保存 Dockerfile。
 
-本仓库 CI 包含合约、后端 race/vet、前端和 Anvil 集成四个 job。独立 main 仓库的远程运行结果另行记录，不能把原开发仓库的成功运行当成本仓库的新运行。
+本仓库 main `9e8e429` 的合约、后端、前端和 Anvil 集成四个 CI job 均已成功：[Actions 运行](https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954)、[CI 证据](evidence/github-ci-2026-10-10.json)。
 
 ## 7. 备份与故障恢复
 

@@ -11,7 +11,7 @@
 - [双语 SRT](../../../deliverables/demo-video-user/subtitles-bilingual.srt)、[独立配音](../../../deliverables/demo-video-user/narration.m4a)、[章节时间轴](../../../deliverables/demo-video-user/chaptertimestamps.md)。
 - [媒体验证记录](VALIDATION.json)：完整解码通过，90 条字幕无时间重叠，赞助到账、审核与领奖关键帧已复核。
 
-以上媒体文件保存在本机并排除于 Git；讲稿和制作工具纳入版本管理。
+以上媒体文件保存在本机并排除于 Git；讲稿和制作工具纳入版本管理。 本页的媒体链接供已放入输出文件的本地工作副本使用；GitHub 仓库不包含 MP4、配音或字幕输出，提交媒体随课程交付包单独提供。
 
 ## 素材与事实
 

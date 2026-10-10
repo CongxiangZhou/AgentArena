@@ -1,0 +1,43 @@
+{
+  "id": 38061976954,
+  "html_url": "https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954",
+  "head_sha": "9e8e42981529ab0fd59f6ff3504f05cab7eb1389",
+  "head_branch": "main",
+  "status": "completed",
+  "conclusion": "success",
+  "verified_at": "2026-10-10T15:06:07.336116+00:00",
+  "jobs": [
+    {
+      "name": "contracts",
+      "html_url": "https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954/job/114241903643",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-10T15:02:05Z",
+      "completed_at": "2026-10-10T15:02:24Z"
+    },
+    {
+      "name": "frontend",
+      "html_url": "https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954/job/114241903777",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-10T15:02:05Z",
+      "completed_at": "2026-10-10T15:03:55Z"
+    },
+    {
+      "name": "backend",
+      "html_url": "https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954/job/114241903830",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-10T15:02:05Z",
+      "completed_at": "2026-10-10T15:04:52Z"
+    },
+    {
+      "name": "integration",
+      "html_url": "https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954/job/114241903880",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-10T15:02:05Z",
+      "completed_at": "2026-10-10T15:03:50Z"
+    }
+  ]
+}

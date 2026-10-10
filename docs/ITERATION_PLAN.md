@@ -12,9 +12,12 @@ Release repository: https://github.com/aokamutidao/agent-arena-escrow. Default b
 | Gas scaling | Current committed snapshots: prize 74,024 and refund 71,635 gas for 1, 16 and 64 sponsors |
 | Video | Completed 600-second 1080p narrated demonstration with bilingual subtitles |
 | Sepolia | Five contracts deployed, roles initialised, code/relationship reads verified |
-| Public services | API health/readiness/chain checks passed; frontend build and page check pending |
-| Submission materials | Report, slides, user manual and contribution statement assembled separately for final release |
+| Public services | Both Render services live on main 9e8e429; page, HTTPS, API, Sepolia sync, language switch and MetaMask entry checks passed; no cloud signing/transactions |
+| Remote CI | [All four jobs passed](https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954) on main 9e8e429 |
+| Submission materials | Report (15 pages), slides (12), manual (5), deployment/testing record (3) and contribution template (1) exported and checked; author identity and contribution attribution still require confirmation |
+
+Public evidence: [cloud smoke](course-project/evidence/cloud-smoke-2026-10-10.json), [CI](course-project/evidence/github-ci-2026-10-10.json).
 
 Details: [tests](course-project/TEST_REPORT.md), [deployment](course-project/DEPLOYMENT.md), [submission checklist](course-project/SUBMISSION_PLAN.md), [video](course-project/demo-user-recording/README.md).
 
-The independent repository starts with a course release snapshot. It does not recreate or invent the original development commit history. Future RAG, tool use and memory enhancements are outside this release.
+The independent repository starts with a course release snapshot. Earlier development history is retained separately. Future RAG, tool use and memory enhancements are outside this release.

@@ -1,0 +1,65 @@
+{
+  "method": "FFmpeg still frame extraction from user recordings; application-only crop; no generated imagery",
+  "assets": [
+    {
+      "file": "hero.jpg",
+      "sha256": "7708fe9ed375f4e378404253446c3a54e1af8d619b999e93ea50aac074b1d0c8",
+      "source": "2 开始对战.mov",
+      "source_sha256": "fe7ca3d77021df0cd7a4df6d95079e8ccd388fd9e9df8e30474c46b31e9d878a",
+      "source_time_seconds": 65.5,
+      "crop": "2650:1788:8:248",
+      "output_dimensions": [
+        1325,
+        894
+      ]
+    },
+    {
+      "file": "sponsor.jpg",
+      "sha256": "2ee2ecaa1b54dd3ba07a57aeb5a0681c67d95e1a0920a58a102c721ef4d0a2b5",
+      "source": "1赛事准备.mov",
+      "source_sha256": "b37f54b8043f877878e2ffef88b0ffec7429b9b660dba8c525a5462a3e11c21c",
+      "source_time_seconds": 152,
+      "crop": "2650:1788:8:248",
+      "output_dimensions": [
+        1325,
+        894
+      ]
+    },
+    {
+      "file": "battle.jpg",
+      "sha256": "63f68e7900c751d418eb638c87f90e0e2ad4ea0cbd338b991a580a30c5cc322d",
+      "source": "2 开始对战.mov",
+      "source_sha256": "fe7ca3d77021df0cd7a4df6d95079e8ccd388fd9e9df8e30474c46b31e9d878a",
+      "source_time_seconds": 42,
+      "crop": "2650:1788:8:248",
+      "output_dimensions": [
+        1325,
+        894
+      ]
+    },
+    {
+      "file": "audit.jpg",
+      "sha256": "bb0a4523fe6afaa9331524d10a2d9ead86ecadcd94d55325a8cbf2fe4fb5a0f9",
+      "source": "3审计检查.mov",
+      "source_sha256": "d590fa6de321a7679661d2aa15720ee5aeb96a2a6210303d3f558549e79265d8",
+      "source_time_seconds": 63.5,
+      "crop": "2650:1788:8:248",
+      "output_dimensions": [
+        1325,
+        894
+      ]
+    },
+    {
+      "file": "claim.jpg",
+      "sha256": "21b3ff5f2689c08cc4e5d8602a78d025107905e2ccb2deb04fa6b91b68bc2901",
+      "source": "4 领取奖励.mov",
+      "source_sha256": "95eb7141e9c8340a40ebe397e8df4650e87fb2f455ac2a72fc203b698f756104",
+      "source_time_seconds": 24.5,
+      "crop": "2650:1788:8:248",
+      "output_dimensions": [
+        1325,
+        894
+      ]
+    }
+  ]
+}

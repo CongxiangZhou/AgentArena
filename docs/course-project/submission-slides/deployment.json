@@ -1,0 +1,21 @@
+{
+  "course": "SC 6113",
+  "repository_url": "https://github.com/aokamutidao/agent-arena-escrow",
+  "repository_label": "github.com/aokamutidao/agent-arena-escrow\nMain branch: main",
+  "verified_commit": "9e8e42981529ab0fd59f6ff3504f05cab7eb1389",
+  "ci_url": "https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954",
+  "ci_status": "All four jobs passed for main revision 9e8e42981529ab0fd59f6ff3504f05cab7eb1389",
+  "cloud_url": "https://agent-arena-course-web.onrender.com",
+  "cloud_caption": "Render Singapore. Sepolia 11155111. Simulation mode.",
+  "cloud_status": "The public application and API are live on Render Singapore. Six HTTPS checks passed on 10 October 2026: homepage, health, readiness, configuration, tournaments and dashboard. Browser checks confirmed the homepage, Chinese/English switching, Sepolia synchronization and the installed MetaMask connection entry. Cloud execution uses deterministic simulation. This smoke test did not sign a wallet request or execute financial transactions; the companion video verifies the full local workflow with real model calls.",
+  "release_label": "Course edition · 10 October 2026",
+  "student_name": "",
+  "student_id": "",
+  "public_chain_id": 11155111,
+  "public_manager": "0x4EAFee134156c65ae64887B5e7B861977C4CFa98",
+  "public_deployment_block": 11885235,
+  "deployment_evidence": "https://github.com/aokamutidao/agent-arena-escrow/blob/main/docs/course-project/evidence/sepolia-deployment-2026-10-10.json",
+  "api_url": "https://agent-arena-course-api.onrender.com",
+  "smoke_verified": true,
+  "repository_confirmed": true
+}

@@ -9,7 +9,8 @@
 - Gas 数值以当前提交的 `contracts/snapshots/PrizeScale.json` 和 `RefundScale.json` 为准：74,024 / 71,635，三个赞助者规模均相同；历史日志中其它测量上下文不直接混用。
 - 最终[600 秒实操视频验证](demo-user-recording/VALIDATION.json)通过。
 - [Sepolia 部署](evidence/sepolia-deployment-2026-10-10.json)包含四笔成功交易、五个合约的代码和三种角色检查。
-- 公网 API 的 /health、/ready、/api/config 检查通过，链配置为 Sepolia；前端构建及页面检查待完成。没有扩展为云端全业务测试。
+- 前后端 Render 服务均已 Live，实际运行 main `9e8e429`。[公网 smoke](evidence/cloud-smoke-2026-10-10.json)通过：首页 HTTPS、API /health /ready /api/config、Sepolia 五合约及同步数据；Chrome 首页、语言切换和 Installed MetaMask 连接入口通过。没有执行钱包签名或云端业务交易。
+- 本仓库 [main CI 四个 job](https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954) 全部成功；[原始 CI 记录](evidence/github-ci-2026-10-10.json)保留相同版本和结果。
 
 初始测试日期：2026-10-09，后续检查按 2026-10-10 的各轮记录分列。环境为本地 macOS / Go 1.25.4 / Node.js 24.11.1 / Foundry 1.5.1 / Solidity 0.8.24（optimizer 200）。本报告区分已执行证据与待验收项目。它不是外部安全审计，也不等于生产部署认证。
 
@@ -239,11 +240,11 @@ node tooling/smoke-course.mjs
 
 历史体验准备快照使用前端 3001 / API 18080 / Anvil 18545，当时赞助者余额 700 DUSD、#3 待到期退款，见[原始快照](evidence/experience-preflight-2026-10-10.json)。它不是当前状态：#3 已取消并退款，033 完成真实模型与 CLI 资金闭环，034 完成 #7 MetaMask 主赛事；当前入口 3002 / 18081，实际进度见本报告最前两节和[操作指南](EXPERIENCE_GUIDE.md)。以下仅列仍未完成的验收范围。
 
-- 公有云 Docker 镜像构建、HTTPS、公开 URL、持久卷与云端恢复；当前机器没有 Docker CLI。
+- Render Docker 构建、HTTPS、公网 URL 和基础 smoke 已完成；免费服务的持久磁盘与云端恢复演练不属于本次已通过范围。
 - 已完成课程 Sepolia 广播、代码/角色读取和回执费用记录；云端确认深度行为按后续只读验收记录。
 - MetaMask 取消退款、争议等分支没有在 034 执行；用户拒签、网络切换和移动端钱包体验仍未形成完整验收证据。用户已取消本轮独立退款演示，不属于 034 主赛事验收的剩余步骤。
 - 真实 Qwen 调用已在 033 及 034 阶段验证；较充分样本的模型错误率、费用与对局公平性评价仍待完成，历史确定性模拟不能替代这部分评价。
 - 多用户并发/长时间运行/资源耗尽/自动灾备测试；当前为单实例 SQLite 方案。
 - 真实利益相关者反馈与作业报告、Slides、个人贡献的最终版本。最终 600 秒实操视频已完成，包含赛事 #13 的完整主业务操作。
 
-独立发布仓库为 https://github.com/aokamutidao/agent-arena-escrow，默认 main；本仓库的远程 CI 结果以实际运行记录为准。
+独立发布仓库为 https://github.com/aokamutidao/agent-arena-escrow，默认 main；版本 `9e8e429` 的 [CI 运行](https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954)已实际完成，contracts、backend、frontend、integration 四项全部成功。

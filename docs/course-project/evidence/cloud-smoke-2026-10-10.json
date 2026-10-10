@@ -1,0 +1,125 @@
+{
+  "verified_at": "2026-10-10T15:05:44.733883+00:00",
+  "repository": "https://github.com/aokamutidao/agent-arena-escrow",
+  "branch": "main",
+  "runtime_commit": "9e8e42981529ab0fd59f6ff3504f05cab7eb1389",
+  "frontend_url": "https://agent-arena-course-web.onrender.com",
+  "api_url": "https://agent-arena-course-api.onrender.com",
+  "scope": "HTTPS frontend, API health/readiness/configuration/data and wallet connection entry only. No cloud financial transactions.",
+  "checks": [
+    {
+      "url": "https://agent-arena-course-web.onrender.com/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "allow_origin": null,
+      "title": "Agent Arena — 赛事奖金托管",
+      "body_bytes": 6958
+    },
+    {
+      "url": "https://agent-arena-course-api.onrender.com/health",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "allow_origin": "https://agent-arena-course-web.onrender.com",
+      "body": {
+        "status": "ok"
+      }
+    },
+    {
+      "url": "https://agent-arena-course-api.onrender.com/ready",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "allow_origin": "https://agent-arena-course-web.onrender.com",
+      "body": {
+        "chain_configured": true,
+        "chain_head": 11885319,
+        "indexed_block": 11885317,
+        "last_error": "",
+        "ready": true
+      }
+    },
+    {
+      "url": "https://agent-arena-course-api.onrender.com/api/config",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "allow_origin": "https://agent-arena-course-web.onrender.com",
+      "body": {
+        "auth_domain": "agent-arena-course-web.onrender.com",
+        "chain_id": 11155111,
+        "confirmations": 2,
+        "deployment_block": 11885235,
+        "deployment_configured": true,
+        "escrow_address": "0x40939074ebcb4967080d924119ceceb4081eb02d",
+        "execution_mode": "deterministic_simulation",
+        "llm_configured": false,
+        "llm_max_calls": 120,
+        "llm_model": "qwen-plus",
+        "llm_provider": "qwen",
+        "llm_timeout_seconds": 30,
+        "manager_address": "0x4eafee134156c65ae64887b5e7b861977c4cfa98",
+        "registry_address": "0xa376e469bbfbb1c68e8c8940071ee20a3c816bd4",
+        "review_address": "0xa2002af04fb7be169a0044bacdb18c2f68291038",
+        "simulation_enabled": true,
+        "token_address": "0x36600325144a43e00a7664e7e7c0d4dda54955f4",
+        "token_decimals": 6
+      }
+    },
+    {
+      "url": "https://agent-arena-course-api.onrender.com/api/tournaments",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "allow_origin": "https://agent-arena-course-web.onrender.com",
+      "body": {
+        "total": 0,
+        "tournaments": []
+      }
+    },
+    {
+      "url": "https://agent-arena-course-api.onrender.com/api/dashboard",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "allow_origin": "https://agent-arena-course-web.onrender.com",
+      "body": {
+        "active_tournaments": 0,
+        "chain_head": 11885319,
+        "completed_tournaments": 0,
+        "escrow_in_raw": "0",
+        "event_count": 3,
+        "indexed_block": 11885317,
+        "ledger_entries": 0,
+        "observed_at": 1791644729,
+        "prizes_paid_raw": "0",
+        "refunds_paid_raw": "0",
+        "registered_participants": 0,
+        "tournaments_total": 0
+      }
+    }
+  ],
+  "http_status": "passed",
+  "browser_check": {
+    "status": "passed",
+    "checks": [
+      "Dashboard rendered",
+      "Chinese and English language switch",
+      "Sepolia chain data synced",
+      "Connect wallet opens installed MetaMask entry"
+    ],
+    "wallet_signed": false,
+    "business_transactions_executed": false,
+    "screenshots": [
+      "cloud-home-2026-10-10.png",
+      "cloud-wallet-entry-2026-10-10.png"
+    ]
+  },
+  "render": {
+    "frontend": {
+      "service_id": "srv-db5510brjlhs73cer6sg",
+      "deploy_id": "dep-db5577142hec73fotvqg",
+      "status": "live"
+    },
+    "api": {
+      "service_id": "srv-db551evlk1mc738p5lvg",
+      "deploy_id": "dep-db5577ad0e5s73e89ru0",
+      "status": "live"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "checked_at": "2026-10-10T15:10:34.622088+00:00",
+  "status": "layout_and_content_checks_passed",
+  "identity_status": "Student names, IDs and confirmed individual attribution remain to be provided. No personal details were invented.",
+  "page_review_method": "All 24 pages were visually reviewed. Final report pages 1–13 and manual pages 2–5 were pixel-identical to individually inspected preflight pages; changed pages and both remaining documents were inspected again.",
+  "documents": [
+    {
+      "name": "Technical-Report",
+      "pages": 15,
+      "all_pages_visually_checked": true,
+      "pending_individual_attribution": false,
+      "files": [
+        {
+          "file": "Agent-Arena-Technical-Report.docx",
+          "bytes": 1277764,
+          "sha256": "2730eb774c2587560d1a4fa20cd0e8e19e27b120cdea750ba9ddc0d4f2db06e6"
+        },
+        {
+          "file": "Agent-Arena-Technical-Report.pdf",
+          "bytes": 927112,
+          "sha256": "d56114ce2a79849696fbbf633c5fa9eb1ef296aec5c067714dd23df5b9487483"
+        }
+      ]
+    },
+    {
+      "name": "User-Manual",
+      "pages": 5,
+      "all_pages_visually_checked": true,
+      "pending_individual_attribution": false,
+      "files": [
+        {
+          "file": "Agent-Arena-User-Manual.docx",
+          "bytes": 43438,
+          "sha256": "5a6f87d6a761fd2304b00305f4a8c162ade2c6e281535cb9778590c5cf833bec"
+        },
+        {
+          "file": "Agent-Arena-User-Manual.pdf",
+          "bytes": 125521,
+          "sha256": "9683f247d70a4d5e1c8178922c16faa7a2ba1cb8171d83912f8a7cf419ad228e"
+        }
+      ]
+    },
+    {
+      "name": "Contribution-Record",
+      "pages": 1,
+      "all_pages_visually_checked": true,
+      "pending_individual_attribution": true,
+      "files": [
+        {
+          "file": "Agent-Arena-Contribution-Record.docx",
+          "bytes": 39338,
+          "sha256": "2d155feb722158e1f5d60e03f0d1bf22d7c2715db431ca7d0f3ceb84684d0a71"
+        },
+        {
+          "file": "Agent-Arena-Contribution-Record.pdf",
+          "bytes": 72048,
+          "sha256": "182081fad680e1d992f5f45f7801b8af5ec637ce5567dd4fcee639cacb0982a8"
+        }
+      ]
+    },
+    {
+      "name": "Deployment-and-Testing-Record",
+      "pages": 3,
+      "all_pages_visually_checked": true,
+      "pending_individual_attribution": false,
+      "files": [
+        {
+          "file": "Agent-Arena-Deployment-and-Testing-Record.docx",
+          "bytes": 41902,
+          "sha256": "3c5b0334d04de62a118065c4ba76b876a50aa06539efe88d5e703a2cdbb7b33e"
+        },
+        {
+          "file": "Agent-Arena-Deployment-and-Testing-Record.pdf",
+          "bytes": 112434,
+          "sha256": "eaa78a1cf7e095ec6df9c0ca278c6b3a1bf9fc434251f6f502dad48c6d4fe69b"
+        }
+      ]
+    }
+  ],
+  "sources": {
+    "CONTRIBUTION_SOURCE.md": "9ece500c6224d491e474265ba0f563c703b28ade80115efa9faa2f70685d5a59",
+    "REPORT_SOURCE.md": "7d821af03a4f70fe92d52f9ed496a9f18e659a86b9d393bcac975cea702ac1bf",
+    "USER_MANUAL_SOURCE.md": "a33d2ae7256b9333bda23b16f6ec4d1ee6aac157278570a9374aeb09879a1444",
+    "DEPLOYMENT_TESTING_SOURCE.md": "76017653081cf2dcbd02fa010ab88aa009c04f82ae817cc2b1d97f3be5395731",
+    "SUBMISSION_FACTS.json": "83fef05b68f1f64a6c241afe50b85d97383cf5cdba77a79aa1a2ac43ff247fff"
+  },
+  "asset_provenance": {
+    "design_figures": "Five project-specific figures created from the implemented architecture, contract interactions, lifecycle, data model and UI structure.",
+    "screenshots": "Two actual tournament 13 recording stills, linked to the media validation record."
+  },
+  "source_note": "These public reading copies have generic group metadata. Confirmed student identities belong only in the private submission files."
+}

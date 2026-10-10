@@ -2,7 +2,7 @@
 
 A full-stack DApp for small AI tournaments: sponsors pre-fund a prize, developers register their Agents, an organiser submits match evidence, an independent auditor confirms the result, and the winning wallet claims the prize. Cancelled or expired events provide individual sponsor refunds.
 
-This repository is the independent course release on `main`. Game mechanics and Agent decision code were reused from an earlier prototype; the tournament escrow, review and settlement domain is the course implementation. Development history remains in the original development repository rather than being represented as new contributions here.
+This repository is the independent course release on `main`. Game mechanics and Agent decision code were reused from an earlier prototype; the tournament escrow, review and settlement domain is the course implementation. Earlier development history is retained in the original repository.
 
 ## Project links
 
@@ -13,7 +13,7 @@ This repository is the independent course release on `main`. Game mechanics and 
 - Manager: `0x4EAFee134156c65ae64887B5e7B861977C4CFa98`; deployment block `11885235`
 - [Contract deployment receipts and read verification](docs/course-project/evidence/sepolia-deployment-2026-10-10.json)
 
-The API smoke check passed: `/health` and `/ready` returned 200, readiness is true, and `/api/config` reports Sepolia and the deployed contracts. Frontend deployment and the final page check are being completed. The recorded end-to-end demonstration runs locally. Public acceptance covers the page, HTTPS, API and chain configuration; it does not claim another cloud financial workflow.
+Both Render services are live on release `9e8e429`. The [public smoke check](docs/course-project/evidence/cloud-smoke-2026-10-10.json) passed: HTTPS page delivery, API health/readiness, Sepolia configuration and synced data. Chrome also verified language switching and the installed MetaMask connection entry. No wallet signature or business transaction was performed during this cloud check. The recorded end-to-end demonstration runs locally. All four [GitHub Actions jobs](https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954) passed for the same `main` release; [CI evidence](docs/course-project/evidence/github-ci-2026-10-10.json) is retained.
 
 ## Implementation
 
