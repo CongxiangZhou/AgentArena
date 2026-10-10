@@ -1,0 +1,164 @@
+{
+  "status": "deployed_and_read_verified",
+  "verified_at": "2026-10-10T14:49:06.913Z",
+  "chain": {
+    "id": 11155111,
+    "name": "Sepolia",
+    "rpc": "https://ethereum-sepolia-rpc.publicnode.com",
+    "assets": "Test ETH and demonstration DUSD only"
+  },
+  "source": {
+    "commit": "79bc823",
+    "compiler": {
+      "version": "0.8.24+commit.e11b9ed9"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "evm_version": "cancun",
+    "commit_full": "79bc8235d1b5e74758da087a14739c9474f3de76"
+  },
+  "deployment_block": "11885235",
+  "token_deployment_block": "11885234",
+  "contracts": {
+    "CourseToken": "0x36600325144a43e00A7664E7e7C0d4dDa54955f4",
+    "TournamentManager": "0x4EAFee134156c65ae64887B5e7B861977C4CFa98",
+    "TournamentRegistry": "0xA376e469BbfBB1c68E8c8940071EE20a3c816bD4",
+    "PrizeEscrow": "0x40939074Ebcb4967080D924119cEceb4081Eb02D",
+    "ResultReview": "0xA2002AF04fb7Be169a0044BAcdB18C2F68291038"
+  },
+  "roles": {
+    "admin": "0x29AE9A185C50A18c14A9fA82EfDaa686E73CAF91",
+    "organizer": "0x29AE9A185C50A18c14A9fA82EfDaa686E73CAF91",
+    "auditor": "0x33c5d09Ffc720d46A5C4d6D844e712B9F87D2719"
+  },
+  "successful_transactions": [
+    {
+      "step": "deploy_token",
+      "estimated_gas": "4078770",
+      "gas_limit": "5098463",
+      "maximum_fee_test_eth": "0.000005098544575408",
+      "transaction_hash": "0xb5fe69bf0d3de104b30c201db4848e9edb527a88b782e237a4c4c7ec263cf02d",
+      "status": "success",
+      "block_number": "11885234",
+      "block_hash": "0x95164f8c6f247bfc1c5e6e49d698b213a2197532dafff5024bc693a38c6a0d81",
+      "contract_address": "0x36600325144a43e00a7664e7e7c0d4dda54955f4",
+      "gas_used": "4045496",
+      "effective_gas_price_wei": "1000014",
+      "paid_test_eth": "0.000004045552636944",
+      "explorer_url": "https://sepolia.etherscan.io/tx/0xb5fe69bf0d3de104b30c201db4848e9edb527a88b782e237a4c4c7ec263cf02d"
+    },
+    {
+      "step": "deploy_manager",
+      "estimated_gas": "39979392",
+      "gas_limit": "49974240",
+      "maximum_fee_test_eth": "0.00004997503958784",
+      "transaction_hash": "0x987895b8f5716aab5c2974702499cbc4265b11b150400f47f1e673e81a9fe890",
+      "status": "success",
+      "block_number": "11885235",
+      "block_hash": "0x1812b9516fb768914cae856117959a0db27b1ec55894ef8a0b0c3f68cf65f555",
+      "contract_address": "0x4eafee134156c65ae64887b5e7b861977c4cfa98",
+      "gas_used": "39663436",
+      "effective_gas_price_wei": "1000014",
+      "paid_test_eth": "0.000039663991288104",
+      "explorer_url": "https://sepolia.etherscan.io/tx/0x987895b8f5716aab5c2974702499cbc4265b11b150400f47f1e673e81a9fe890"
+    },
+    {
+      "step": "grant_organizer",
+      "estimated_gas": "134650",
+      "gas_limit": "168313",
+      "maximum_fee_test_eth": "0.000000168315693008",
+      "transaction_hash": "0x6896e4a78fd81a5de3fba3a6be51df4b85dd920723edf5b5a2398e671c944b7a",
+      "status": "success",
+      "block_number": "11885236",
+      "block_hash": "0xfb1f909072b7c198edd10186b3320aa65f05af07d85786320e3bfd59e1883379",
+      "contract_address": null,
+      "gas_used": "133537",
+      "effective_gas_price_wei": "1000014",
+      "paid_test_eth": "0.000000133538869518",
+      "explorer_url": "https://sepolia.etherscan.io/tx/0x6896e4a78fd81a5de3fba3a6be51df4b85dd920723edf5b5a2398e671c944b7a"
+    },
+    {
+      "step": "grant_auditor",
+      "estimated_gas": "134650",
+      "gas_limit": "168313",
+      "maximum_fee_test_eth": "0.000000168315693008",
+      "transaction_hash": "0xf787d7d8910dda383cfe7ff81dd124c0a3782f69b8b43b7a46f35d04949f0baf",
+      "status": "success",
+      "block_number": "11885237",
+      "block_hash": "0x72127171e35f24b1b8adaf114a63414d1ac348b0e672507a7a36db27d9f566c2",
+      "contract_address": null,
+      "gas_used": "133537",
+      "effective_gas_price_wei": "1000014",
+      "paid_test_eth": "0.000000133538869518",
+      "explorer_url": "https://sepolia.etherscan.io/tx/0xf787d7d8910dda383cfe7ff81dd124c0a3782f69b8b43b7a46f35d04949f0baf"
+    }
+  ],
+  "prior_failed_attempts": [
+    {
+      "transaction_hash": "0x0082f85aa257a51770f93996d3d8e20ea79f5ec811cc602b994a26630f04975d",
+      "status": "reverted",
+      "block_number": "11885208",
+      "block_hash": "0x9b97a5d4d9b2aefbf1eb29bfe6fea2299134a101c8e7131c875e78f6346fdf2e",
+      "contract_address": "0x5d0c84e5053052d80775df3aa14c8c48988bfc85",
+      "gas_used": "808522",
+      "effective_gas_price_wei": "55371173",
+      "paid_test_eth": "0.000044768811536306",
+      "explorer_url": "https://sepolia.etherscan.io/tx/0x0082f85aa257a51770f93996d3d8e20ea79f5ec811cc602b994a26630f04975d",
+      "note": "Earlier Forge broadcast reverted with gasUsed equal to supplied gas limit 808522; this hash was not resubmitted.",
+      "gas_limit": "808522"
+    }
+  ],
+  "verification": {
+    "code": [
+      {
+        "contract": "CourseToken",
+        "address": "0x36600325144a43e00A7664E7e7C0d4dDa54955f4",
+        "runtime_bytes": 2259,
+        "runtime_keccak256": "0xe0a75f6f50a9e3302197c0bda236e86a914e2b0c9de572a45821ad08fbe55d7e"
+      },
+      {
+        "contract": "TournamentManager",
+        "address": "0x4EAFee134156c65ae64887B5e7B861977C4CFa98",
+        "runtime_bytes": 13614,
+        "runtime_keccak256": "0xc573a6e07e15b56e923182fb9a4d4c001d5c253635c2a4ef2963606f6f4cd79f"
+      },
+      {
+        "contract": "TournamentRegistry",
+        "address": "0xA376e469BbfBB1c68E8c8940071EE20a3c816bD4",
+        "runtime_bytes": 5005,
+        "runtime_keccak256": "0xcd9a89fc0b032dccdc49d7c587276e85ccc8b82b8b90931a1b02d5255cb91e97"
+      },
+      {
+        "contract": "PrizeEscrow",
+        "address": "0x40939074Ebcb4967080D924119cEceb4081Eb02D",
+        "runtime_bytes": 4515,
+        "runtime_keccak256": "0xf46321fa502478173d9fa3d3730feb7d9cd6b5c8a9cd78a59aefa57316c00970"
+      },
+      {
+        "contract": "ResultReview",
+        "address": "0xA2002AF04fb7Be169a0044BAcdB18C2F68291038",
+        "runtime_bytes": 1705,
+        "runtime_keccak256": "0x4006daad42693e22c1188566bfc5ddca98375c65d0b716b8be60199805084b91"
+      }
+    ],
+    "settlement_token_matches": true,
+    "admin_role": true,
+    "organizer_role": true,
+    "auditor_role": true,
+    "next_tournament_id": "1",
+    "token": {
+      "symbol": "DUSD",
+      "decimals": 6,
+      "total_supply": "0",
+      "owner": "0x29AE9A185C50A18c14A9fA82EfDaa686E73CAF91"
+    },
+    "scope": "Deployment, role initialization, code and read-only relationship checks. No mint, seed tournament, sponsorship, battle, settlement or refund executed during this deployment."
+  },
+  "totals": {
+    "successful_gas_used": "43976006",
+    "successful_fee_wei": "43976621664084",
+    "prior_failed_gas_used": "808522"
+  }
+}
