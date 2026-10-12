@@ -4,7 +4,7 @@ Next.js 14 / React / wagmi / RainbowKit / viem. Course entry points: `/` financi
 
 ## Run
 
-Use Node.js 20 or newer. Install the checked-in dependencies with `npm ci`, copy `.env.example` to `.env.local`, start the course backend described in `../docs/course-project/DEPLOYMENT.md`, then run `npm run dev`. The frontend reads deployment addresses, token precision, chain ID and confirmation depth from `/api/config`. An unconfigured deployment is visibly read-only; no historical contract addresses are used.
+Use Node.js 20 or newer. Install the checked-in dependencies with `npm ci`, copy `.env.example` to `.env.local`, start the course backend described in `../docs/DEPLOYMENT.md`, then run `npm run dev`. The frontend reads deployment addresses, token precision, chain ID and confirmation depth from `/api/config`. An unconfigured deployment is visibly read-only; no historical contract addresses are used.
 
 Set `NEXT_PUBLIC_API_URL` to the public backend origin. An explicitly empty value supports a same-origin `/api` reverse proxy. `NEXT_PUBLIC_LOCAL_RPC_URL` defaults to `http://127.0.0.1:8545`; both local Anvil 31337 and Sepolia 11155111 are supported. Browser-visible RPC URLs must not contain privileged secrets.
 
@@ -21,4 +21,4 @@ npm run build
 
 Pure domain tests compile the actual TypeScript helper module in memory using the installed TypeScript dependency; they cover exact monetary units, input precision/overflow, timeouts and evidence tampering. The Next.js build retains the ESLint gate and produces standalone output for the deployment image.
 
-The complete Chinese user guide is `../docs/course-project/USER_GUIDE.md`. Generated ABI source is `src/lib/course-abi.ts`; regenerate it with `contracts/export_abi.py` when contracts change.
+The complete user guide is `../docs/USER_GUIDE.md`. Generated ABI source is `src/lib/course-abi.ts`; regenerate it with `contracts/export_abi.py` when contracts change.

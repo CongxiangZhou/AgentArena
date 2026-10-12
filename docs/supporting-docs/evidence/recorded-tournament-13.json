@@ -1,0 +1,135 @@
+{
+  "record_type": "retrospective_local_demonstration_evidence",
+  "extracted_at": "2026-10-10T15:02:59.175402+00:00",
+  "scope": "Read-only extraction of retained local SQLite records, cross-referenced to the submitted recording. No wallet transaction or model call was executed during this extraction.",
+  "environment": {
+    "network": "Local Anvil",
+    "chain_id": 31337,
+    "manager": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512",
+    "token_symbol": "DUSD",
+    "token_decimals": 6,
+    "test_assets_only": true
+  },
+  "tournament": {
+    "id": 13,
+    "title": "agent fight test 4",
+    "status": "finalized",
+    "prize_pool_raw": "100000000",
+    "prize_paid_raw": "100000000",
+    "prize_claimed": true,
+    "outstanding_escrow_raw": "0",
+    "winner": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+    "evidence_hash": "0x00bc8fa3e7148c3dfbc98c0bb823c8a7448a37a1118f43ba741aa4a655fb1b22",
+    "indexed_snapshot_confirmed": true
+  },
+  "match": {
+    "status": "completed",
+    "mode": "llm",
+    "rounds": 15,
+    "outcome": "blue",
+    "red_final_hp": 0,
+    "blue_final_hp": 10,
+    "evidence_hash": "0x00bc8fa3e7148c3dfbc98c0bb823c8a7448a37a1118f43ba741aa4a655fb1b22",
+    "summary": {
+      "provider": "qwen",
+      "model": "qwen3.5-plus",
+      "attempted": 30,
+      "succeeded": 30,
+      "failed": 0,
+      "latency_ms": 66964,
+      "usage": {
+        "prompt_tokens": 30543,
+        "completion_tokens": 513,
+        "total_tokens": 31056
+      },
+      "last_error_code": ""
+    }
+  },
+  "ledger_entries": [
+    {
+      "kind": "deposit",
+      "actor": "0x9965507d1a55bcc2695c58ba16fb37d819b0a4dc",
+      "amount_raw": "100000000"
+    },
+    {
+      "kind": "prize",
+      "actor": "0x15d34aaf54267db7d7c367839aaf71a00a2c6a65",
+      "amount_raw": "100000000"
+    }
+  ],
+  "indexed_chain_events": [
+    {
+      "chain_id": 31337,
+      "tx_hash": "0xb2be17851dfe3ab2f108a4b2ced75388f28470896dceb961ac8ff47c2bab0354",
+      "log_index": 0,
+      "block_number": 32899,
+      "event_name": "TournamentCreated"
+    },
+    {
+      "chain_id": 31337,
+      "tx_hash": "0x2f8c8f39e9a4511b3a5aea78aa271428b4f87137e0e3cb519fec4763455fdc18",
+      "log_index": 0,
+      "block_number": 32940,
+      "event_name": "ParticipantRegistered"
+    },
+    {
+      "chain_id": 31337,
+      "tx_hash": "0x6dd7a0263537f498e3d9b9fa362a798364ecc884a1d6a76240f49b89570cb44d",
+      "log_index": 0,
+      "block_number": 32971,
+      "event_name": "ParticipantRegistered"
+    },
+    {
+      "chain_id": 31337,
+      "tx_hash": "0x978494d4cd7d32634c2d98cce5a02898a491edd72d83ab383640c781a6e2a1f8",
+      "log_index": 1,
+      "block_number": 33014,
+      "event_name": "TournamentFunded"
+    },
+    {
+      "chain_id": 31337,
+      "tx_hash": "0xf192c5275270d56e8f3bba51f03df3df02a95dbfdec22c57c0fd69187766e847",
+      "log_index": 0,
+      "block_number": 33167,
+      "event_name": "TournamentStarted"
+    },
+    {
+      "chain_id": 31337,
+      "tx_hash": "0x5e70455611c2c301b57f25b3bd8af500d4ef6a858786ddd39d77d7b60826693d",
+      "log_index": 0,
+      "block_number": 33275,
+      "event_name": "ResultSubmitted"
+    },
+    {
+      "chain_id": 31337,
+      "tx_hash": "0xbcf56d1a21659b978efb25dcc5b69ee3696fcc2e64d0ee53af2bcaee7ce33012",
+      "log_index": 0,
+      "block_number": 33387,
+      "event_name": "ResultApproved"
+    },
+    {
+      "chain_id": 31337,
+      "tx_hash": "0x8335bb2e5a7ce38954bed1ddac4d0137fa30c83d789a7f12d007e90a8711d21a",
+      "log_index": 1,
+      "block_number": 33450,
+      "event_name": "PrizeClaimed"
+    }
+  ],
+  "video_observations": {
+    "winner_balance_before_dusd": 300,
+    "winner_balance_after_dusd": 400,
+    "balance_scope": "The local blue wallet, visually verified in the original prize-claim recording and final encoded frame at 408 seconds.",
+    "sources": [
+      "docs/supporting-docs/demo-user-recording/VALIDATION.json",
+      "docs/supporting-docs/demo-user-recording/NARRATION.en-zh.json",
+      "docs/supporting-docs/submission/assets/screenshots/prize-claim.png"
+    ]
+  },
+  "interpretation": {
+    "cumulative_call_latency_is_wall_clock": false,
+    "video_is_unedited_timing_benchmark": false,
+    "same_execution_as_event_7": false,
+    "cloud_business_flow_test": false,
+    "local_receipt_replay_performed_during_extraction": false
+  }
+}

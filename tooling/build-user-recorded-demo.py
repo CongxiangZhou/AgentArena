@@ -570,7 +570,7 @@ def main() -> int:
     mode.add_argument("--audio", action="store_true", help="Fit pre-generated cue WAVs to scenes and create narration/subtitles")
     mode.add_argument("--render", action="store_true", help="Fit narration, render scenes, assemble both videos and validate")
     mode.add_argument("--all", action="store_true", help="Plan, fit audio, render and validate; speech cue WAVs must already exist")
-    parser.add_argument("--narration", type=Path, default=ROOT / "docs/course-project/demo-user-recording/NARRATION.en-zh.json")
+    parser.add_argument("--narration", type=Path, default=ROOT / "docs/supporting-docs/demo-user-recording/NARRATION.en-zh.json")
     parser.add_argument("--voice", type=Path, default=ROOT / ".local/user-demo-edit/voice")
     parser.add_argument("--sources", type=Path, default=Path.home() / "Desktop")
     parser.add_argument("--intro", type=Path, default=ROOT / ".local/user-demo-edit/intro")

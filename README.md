@@ -11,9 +11,9 @@ This repository is the independent course release on `main`. Game mechanics and 
 - REST API: https://agent-arena-course-api.onrender.com
 - Network: Sepolia, chain ID `11155111`
 - Manager: `0x4EAFee134156c65ae64887B5e7B861977C4CFa98`; deployment block `11885235`
-- [Contract deployment receipts and read verification](docs/course-project/evidence/sepolia-deployment-2026-10-10.json)
+- [Contract deployment receipts and read verification](docs/supporting-docs/evidence/sepolia-deployment-2026-10-10.json)
 
-Both Render services are live on release `9e8e429`. The [public smoke check](docs/course-project/evidence/cloud-smoke-2026-10-10.json) passed: HTTPS page delivery, API health/readiness, Sepolia configuration and synced data. Chrome also verified language switching and the installed MetaMask connection entry. No wallet signature or business transaction was performed during this cloud check. The recorded end-to-end demonstration runs locally. All four [GitHub Actions jobs](https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954) passed for the same `main` release; [CI evidence](docs/course-project/evidence/github-ci-2026-10-10.json) is retained.
+Both Render services are live on release `9e8e429`. The [public smoke check](docs/supporting-docs/evidence/cloud-smoke-2026-10-10.json) passed: HTTPS page delivery, API health/readiness, Sepolia configuration and synced data. Chrome also verified language switching and the installed MetaMask connection entry. No wallet signature or business transaction was performed during this cloud check. The recorded end-to-end demonstration runs locally. All four [GitHub Actions jobs](https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954) passed for the same `main` release; [CI evidence](docs/supporting-docs/evidence/github-ci-2026-10-10.json) is retained.
 
 ## Implementation
 
@@ -43,12 +43,12 @@ node tooling/smoke-course.mjs
 
 The integration script uses a fresh local Anvil chain and temporary database, verifies funding, evidence, claims, refunds and restart behaviour, then stops its own processes. To keep a local demo running, use `node tooling/smoke-course.mjs --serve` and start the frontend with `(cd frontend && NEXT_PUBLIC_API_URL=http://localhost:8080 npm run dev)`.
 
-For a persistent local workspace, follow [deployment and recovery](docs/course-project/DEPLOYMENT.md). Never commit deployment or model credentials.
+For a persistent local workspace, follow [deployment and recovery](docs/DEPLOYMENT.md). Never commit deployment or model credentials.
 
 ## Documentation and evidence
 
-Start with the [documentation index](docs/course-project/README.md), then read [requirements](docs/course-project/REQUIREMENTS.md), [architecture](docs/course-project/ARCHITECTURE.md), [contracts](docs/course-project/CONTRACT.md), [API](docs/course-project/API.md), [user guide](docs/course-project/USER_GUIDE.md) and [tests](docs/course-project/TEST_REPORT.md).
+Start with the [documentation index](docs/README.md), then read [requirements](docs/REQUIREMENTS.md), [architecture](docs/ARCHITECTURE.md), [contracts](docs/CONTRACT.md), [API](docs/API.md), [user guide](docs/USER_GUIDE.md) and [tests](docs/TEST_REPORT.md).
 
-The ten-minute English-narrated demonstration with English/Chinese subtitles shows tournament 13: 15 real-model rounds, 30 successful calls and a 100 DUSD prize. [Script and verification](docs/course-project/demo-user-recording/README.md) are versioned; the video is delivered separately.
+The presentation video (about 15 minutes) combines the 14-slide deck with the recorded demonstration of tournament 13: 15 real-model rounds, 30 successful calls and a 100 DUSD prize. [Script and verification](docs/supporting-docs/demo-user-recording/README.md) are versioned; the video is delivered separately.
 
 Render free services use transient local storage and may sleep while idle. Original Agent definitions and match evidence require backups for sustained use. This course release uses SQLite; RAG, MySQL, Redis and long-term Agent memory are future work.
