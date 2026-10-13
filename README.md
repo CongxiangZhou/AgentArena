@@ -1,5 +1,12 @@
 # Agent Arena Escrow
 
+**Course**: SC6113 — Development of Decentralized Applications · NTU  
+**Group**: 1
+
+For the original team repository, including the full pull request history, see [aokamutidao/agent-arena-escrow](https://github.com/aokamutidao/agent-arena-escrow).
+
+---
+
 A full-stack DApp for small AI tournaments: sponsors pre-fund a prize, developers register their Agents, an organiser submits match evidence, an independent auditor confirms the result, and the winning wallet claims the prize. Cancelled or expired events provide individual sponsor refunds.
 
 This repository is the independent course release on `main`. Game mechanics and Agent decision code were reused from an earlier prototype; the tournament escrow, review and settlement domain is the course implementation. Earlier development history is retained in the original repository.
@@ -14,6 +21,16 @@ This repository is the independent course release on `main`. Game mechanics and 
 - [Contract deployment receipts and read verification](docs/supporting-docs/evidence/sepolia-deployment-2026-10-10.json)
 
 Both Render services are live on release `9e8e429`. The [public smoke check](docs/supporting-docs/evidence/cloud-smoke-2026-10-10.json) passed: HTTPS page delivery, API health/readiness, Sepolia configuration and synced data. Chrome also verified language switching and the installed MetaMask connection entry. No wallet signature or business transaction was performed during this cloud check. The recorded end-to-end demonstration runs locally. All four [GitHub Actions jobs](https://github.com/aokamutidao/agent-arena-escrow/actions/runs/38061976954) passed for the same `main` release; [CI evidence](docs/supporting-docs/evidence/github-ci-2026-10-10.json) is retained.
+
+## Team
+
+| Member | Role |
+| --- | --- |
+| LI Yunwei | Project lead · architecture · AI match engine · integration |
+| HE Huzhengxiong | Smart contracts · security testing |
+| MENG Fanda | Go backend · deployment verification |
+| Maxine KOH Xin Yi | Frontend UI · problem analysis |
+| ZHOU Congxiang | Demonstration interface · presentation |
 
 ## Implementation
 
