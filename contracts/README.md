@@ -1,7 +1,7 @@
 # Tournament prize contracts
 
 The course application uses `TournamentManager` to coordinate `TournamentRegistry`,
-`PrizeEscrow`, and `ResultReview`. The [frozen interface](../docs/course-project/CONTRACT.md)
+`PrizeEscrow`, and `ResultReview`. The [frozen interface](../docs/CONTRACT.md)
 specifies roles, timing, states, ABI tuples and 13 independently signed business operations.
 Two wallets register immutable Agent profile hashes, sponsors fund a winner-takes-all
 prize, and a designated independent auditor reviews the evidence. There is no viewer
@@ -74,7 +74,7 @@ forge script script/DeployCourse.s.sol:DeployCourse --rpc-url http://127.0.0.1:8
 The script prints chain ID, block, token and all four application contract addresses.
 It grants organizer/auditor roles but does not seed user funds. Use only explicit local
 test accounts for a local trial. Further setup is in the
-[course deployment guide](../docs/course-project/DEPLOYMENT.md).
+[course deployment guide](../docs/DEPLOYMENT.md).
 
 ## Legacy migration
 
